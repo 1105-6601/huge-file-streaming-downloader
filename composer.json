@@ -1,16 +1,16 @@
 {
-    "name": "suemitsu/huge-file-streaming-downloader",
+    "name": "tkzo/huge-file-streaming-downloader",
     "description": "A streaming downloader for huge file in PHP.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "suemitsu",
-            "email": "yzf.hiro@gmail.com"
+            "name": "tkzo",
+            "email": "contact@tkzo.jp"
         }
     ],
     "require": {
-      "php": "^7.0"
+      "php": "^7.0 || ^8.0"
     },
     "autoload": {
         "psr-4": {
@@ -19,6 +19,6 @@
         }
     },
     "require-dev": {
-        "phpunit/phpunit": "^6.5"
+        "phpunit/phpunit": "^9.5.9"
     }
 }

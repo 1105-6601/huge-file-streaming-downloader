@@ -2,10 +2,10 @@ Huge file streaming downloader for PHP
 =============================
 
 [![Build Status](https://travis-ci.org/1105-6601/huge-file-streaming-downloader.png?branch=master)](https://travis-ci.org/1105-6601/huge-file-streaming-downloader)
-[![GitHub tag](https://img.shields.io/github/tag/1105-6601/huge-file-streaming-downloader.svg?label=latest)](https://packagist.org/packages/suemitsu/huge-file-streaming-downloader) 
-[![Packagist](https://img.shields.io/packagist/dt/1105-6601/huge-file-streaming-downloader.svg)](https://packagist.org/packages/suemitsu/huge-file-streaming-downloader)
+[![GitHub tag](https://img.shields.io/github/tag/1105-6601/huge-file-streaming-downloader.svg?label=latest)](https://packagist.org/packages/tkzo/huge-file-streaming-downloader) 
+[![Packagist](https://img.shields.io/packagist/dt/1105-6601/huge-file-streaming-downloader.svg)](https://packagist.org/packages/tkzo/huge-file-streaming-downloader)
 [![Minimum PHP Version](http://img.shields.io/badge/php-%3E%3D%207.0-8892BF.svg)](https://php.net/)
-[![License](https://img.shields.io/packagist/l/1105-6601/huge-file-streaming-downloader.svg)](https://packagist.org/packages/suemitsu/huge-file-streaming-downloader)
+[![License](https://img.shields.io/packagist/l/1105-6601/huge-file-streaming-downloader.svg)](https://packagist.org/packages/tkzo/huge-file-streaming-downloader)
 
 This package is streaming downloader for loading huge file from remote.
 It is possible to save a huge file locally without loading the entire file into memory.
@@ -21,7 +21,7 @@ Installation
 To install `HugeFileStreamingDownloader` you can either clone this repository or you can use composer.
 
 ```
-composer require suemitsu/huge-file-streaming-downloader
+composer require tkzo/huge-file-streaming-downloader
 ```
 
 
