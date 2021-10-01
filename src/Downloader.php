@@ -16,10 +16,21 @@ class Downloader
      */
     private $chunkSize;
 
-    public function __construct(string $url, int $chunkSize = 1024 * 1024)
+    public function __construct(string $url, int $chunkSize = 1024 * 1024, bool $verifySsl = true)
     {
-        $this->remoteFileHandle = fopen($url, 'rb');
-        $this->chunkSize        = $chunkSize;
+        if ($verifySsl) {
+            $this->remoteFileHandle = fopen($url, 'rb');
+        } else {
+            $opts = [
+                'ssl' => [
+                    'verify_peer'      => false,
+                    'verify_peer_name' => false,
+                ],
+            ];
+            $this->remoteFileHandle = fopen($url, 'rb', false, stream_context_create($opts));
+        }
+
+        $this->chunkSize = $chunkSize;
     }
 
     public function start(string $savePath, bool $makeDir = true): int
